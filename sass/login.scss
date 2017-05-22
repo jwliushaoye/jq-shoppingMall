@@ -1,0 +1,159 @@
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img {margin:0; padding:0;}
+ul li {list-style:none;}
+a{text-decoration:none;}
+img{border:0 ; display:block;}
+
+
+//top
+.top{
+  width: 100%; height: 25px;  background: #f2f2f2; border-bottom: 1px solid #d2d2d2;
+  .cen{
+    width: 1000px; margin: 0 auto; height: 25px; display: flex; justify-content: space-between; position: relative;
+    .left{
+      a{
+        float: left; margin-right: 10px;
+      }
+      .wechat{
+        position: absolute; top: 26px; left: 0; display: none; z-index: 5; width: 200px; height: 200px;
+      }
+    }
+    ul{
+      display: flex; right: 0; line-height: 25px;
+      li{
+        font-size: 12px; align-items: center; padding: 0 10px;
+        a{
+          color: #666;
+        }
+      }
+      li:nth-child(2),li:nth-child(3),li:nth-child(4),li:nth-child(5){
+        a:hover{
+          color: red;
+        }
+      }
+      li:last-child{
+        position: relative;
+        ul{
+          width: 80px;display: flex; flex-direction: column; position: absolute;box-shadow: 0 0 5px #999;display: none; z-index: 2; background: #fff;
+          li:hover{
+            color: red;cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+//nav
+nav{
+  width: 1000px; margin: 0 auto; margin-top: 20px;
+  a{
+    img{
+      width: 240px;
+      height: 90px;
+    }
+  }
+}
+
+//section
+section{
+  width: 1000px; border: 5px solid #efefef; margin: 0 auto; display: flex; margin-bottom: 20px; position: relative;
+  .section_l{
+    margin-right: 20px;
+    a{
+      img{
+        width: 600px;
+      }
+    }
+  }
+  .section_r{
+    background: url("../img/section_r_bg.png") no-repeat left; flex: 1; display: flex; flex-direction: column; padding-left: 60px; box-sizing: border-box;
+    p{
+       font-size: 14px; color: #999; margin-bottom: 5px;
+    }
+    p:nth-child(1){
+      margin-top: 40px;
+    }
+    #username_ipt,#password_ipt{
+      width: 274px; height: 30px;outline:0; padding:0 30px 0 10px; box-sizing: border-box; border: 1px solid #ccc;
+    }
+    #username_ipt{
+      background: url("../img/username_bg.png") no-repeat right 10px center;
+    }
+    #password_ipt{
+      background: url("../img/password_bg.png") no-repeat right 10px center;
+    }
+    h5{
+      height: 30px; font-weight: normal; line-height: 30px; font-size: 12px; color: red
+    ;
+    }
+    h3{
+      font-size: 12px;  font-weight: normal;
+      a{
+        color: #005aa0; margin-left: 10px;
+      }
+      a:hover{
+        text-decoration: underline;
+      }
+    }
+    #login_btn{
+      width: 275px; height: 35px; border: none; background: #e2393c; border-radius: 3px; line-height: 35px; font-size: 18px; color: #fff; margin-top: 20px; text-shadow: 0 0 4px #666;
+      cursor: pointer; outline: 0; text-align: center;
+    }
+    #login_btn:hover{
+      background: #d1282b;
+    }
+    h4{
+      display: flex; align-items: center; font-size: 12px; color: #666; font-weight: normal; margin-top: 16px;
+      a{
+        display:block;width: 132px; height: 31px; line-height: 31px; text-align: center; border: 1px solid #e5e6e6; color: #e2393c; border-radius: 3px; font-family: '微软雅黑'; font-size: 14px;
+         margin-left: 10px; box-shadow:inset 0 0 20px #eee;
+      }
+      a:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  .section_abs{
+    width: 300px;box-shadow:inset 0 0 50px #eee; font-family: '微软雅黑';
+    font-size: 16px;padding: 20px; box-sizing: border-box; position: absolute; left: 350px;
+    top: 100px; background: #fff; display: none;
+  }
+}
+
+//footer
+footer{
+  display: flex; flex-direction: column; align-items: center; width: 1000px; margin: 0 auto;
+  .footer_cen{
+    color: #666; font-size: 12px; display: flex; padding: 20px 0;
+    a{
+      color: #666; margin-right: 35px;
+    }
+    a:hover{
+      color: red;
+    }
+    p{
+      margin-left: 35px;
+    }
+  }
+  .footer_bot{
+    display: flex; align-items: center; margin-bottom: 50px;
+    img{
+      margin-right: 20px; cursor: pointer;
+    }
+  }
+}
+
+
+
+.fa-list-ul{
+  margin-right: 5px; color: #000;
+}
+
+.fa-user-o{
+  margin-right: 5px; color: red;
+}
+
+.fa-caret-down{
+  margin-left: 5px; color: #999395;
+}
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../css/redister.css">
+    <script src="../js/third_js/jquery-1.11.3.js"></script>
+    <script src="../js/third_js/jquery-ui.js"></script>
+    <script src="../js/my_project_js/redister.js"></script>
+</head>
+<body>
+<!--top-->
+<div class="top">
+    <div class="cen">
+        <div class="left">
+            <a href="javascript:;"><img src="../img/anniu-1.png"></a>
+            <a href="javascript:;" class="seconda"><img src="../img/anniu-2.png"></a>
+            <a href="http://weibo.com/tianhongcn" target="_blank"><img src="../img/anniu-3.png"></a>
+            <img src="../img/wechat.png" class="wechat">
+        </div>
+        <ul>
+            <li>你好，欢迎来到新惠商城！</li>
+            <!--点击跳转到登录页面-->
+            <li><a href="login.html">[登录]</a></li>
+            <!--点击跳转到注册界面-->
+            <li><a href="register.html">[注册]</a></li>|
+            <!--点击跳转到登录页面-->
+            <li><a href="login.html"><i class="fa fa-list-ul"></i>我的订单</a></li>|
+            <!--点击跳转到登录页面-->
+            <li><a href="login.html">我的新惠！</a></li>|
+            <li class="lastli">
+                <a href="javascript:;" class="pullbtn"><i class="fa fa-user-o"></i>客户服务<i class="fa fa-caret-down"></i></a>
+                <ul class="pullul">
+                    <li>大客户服务</li>
+                    <li>线上服务</li>
+                    <li>服务热线</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div id="logo"><a href="index.html"><img src="../img/newlogo.png"></a></div>
+
+<!--section-->
+<section>
+    <nav>用户注册</nav>
+    <div class="sec_left">
+        <ul>
+            <li class="sec_abs">
+                <p><i>*</i> 账号:</p>
+                <input id="name_ipt">
+                <span>请输入用户名/邮箱/手机号</span>
+            </li>
+            <li>
+                <p><i>*</i> 请设置密码:</p>
+                <input id="pass_ipt" type="password">
+                <span>6-20位字符，由符号、字母、数字组成</span>
+            </li>
+            <b class="self_b">安全程度:<i class="ruo">弱</i><i class="zhong">中</i><i class="strong">强</i></b>
+            <li class="li_three">
+                <p><i>*</i > 请确认密码:</p><input id="sure_ipt" type="password">
+                <span>请确认密码</span>
+            </li>
+            <li>
+                <p><i>* </i> 验证手机:</p>
+                <input id="phone_ipt">
+                <span>请输入验证手机号码</span>
+            </li>
+            <li>
+                <p><i>* </i> 验证码:</p>
+                <input id="yaz_ipt"><p class="yaz_img"></p><h3 class="change">看不清？<a id="change_img">换一张</a></h3>
+                <span class="span_sort">请输入图形验证码</span>
+            </li>
+            <li>
+                <p><i>* </i> 短信验证码:</p>
+                <input id="mes_ipt"><a href="javascript:;" class="get_yz">获取短信验证码</a>
+                <span>请输入验证码</span>
+            </li>
+            <li>
+                <p>常去的门店:</p>
+                <select>
+                    <option>请选择</option>
+                </select>
+                <select>
+                    <option>请选择</option>
+                </select>
+            </li>
+            <li>
+                <p></p>
+                <input type="checkbox" checked="checked" class="agree">我已阅读并同意
+                <a href="http://www.tianhong.cn/cms/article_info.html?id=1202">《注册协议》</a>
+            </li>
+            <a href="javascript:;" class="redister re_bg">同意以上协议，注册</a>
+        </ul>
+    </div>
+    <div class="sec_rigtht">
+        <span>我已经有账号了</span>
+        <a href="login.html">立即登录</a>
+    </div>
+</section>
+
+<div class="defite">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../css/shopping_car.css">
+    <link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="../js/third_js/jquery-1.11.3.js"></script>
+    <script src="../js/my_project_js/shoppingcar.js"></script>
+</head>
+<body>
+<!--top-->
+<div class="top">
+    <div class="cen">
+        <div class="left">
+            <a href="javascript:;"><img src="../img/anniu-1.png"></a>
+            <a href="javascript:;" class="seconda"><img src="../img/anniu-2.png"></a>
+            <a href="http://weibo.com/tianhongcn" target="_blank"><img src="../img/anniu-3.png"></a>
+            <img src="../img/wechat.png" class="wechat">
+        </div>
+        <ul>
+            <li id="username">你好，欢迎来到新惠商城！</li>
+            <!--点击跳转到登录页面-->
+            <li class="login"><a href="login.html">[登录]</a></li>
+            <!--点击跳转到注册界面-->
+            <li class="redister"><a href="register.html">[注册]</a></li>|
+            <!--点击跳转到登录页面-->
+            <li><a href="login.html"><i class="fa fa-list-ul"></i>我的订单</a></li>|
+            <!--点击跳转到登录页面-->
+            <li><a href="login.html">我的新惠！</a></li>|
+            <li class="lastli">
+                <a href="javascript:;" class="pullbtn"><i class="fa fa-user-o"></i>客户服务<i class="fa fa-caret-down"></i></a>
+                <ul class="pullul">
+                    <li>大客户服务</li>
+                    <li>线上服务</li>
+                    <li>服务热线</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--header-->
+<header>
+    <a href="index.html"><img class="img_logo" src="../img/newlogo.png"></a>
+    <img src="../img/shopping_nav.png">
+</header>
+
+<!--nav-->
+<nav>
+    <p><span>运费说明</span>自营商品满额可享受运费优惠，深圳市自提实付满59元免运费；商家自配送商品以商家运费规则为准。详见 <a href="http://www.tianhong.cn/help/detail-653.html"> 配送运费标准</a></p>
+</nav>
+
+<!--article-->
+<article>
+    <ul class="art_ul">
+        <li><input type="checkbox" checked="checked">全选</li>
+        <li>商品信息</li>
+        <li>价格/积分</li>
+        <li>数量</li>
+        <li>返回积分</li>
+        <li>重量</li>
+        <li>小计</li>
+        <li>操作</li>
+    </ul>
+
+    <div id="content"></div>
+    <!--<div class="art_center">-->
+        <!--<p class="art_cen_p"><input type="checkbox" checked="checked"><span></span><img src="../img/lianxi.png"></p>-->
+    <!--</div>-->
+    <div class="art_bottom">
+        <ul>
+            <li>
+                <input type="checkbox" checked="checked"> 全选
+                <a href="javascript:;" id="delete_some">批量删除</a><a href="javascript:;" id="clear_all">清空购物车</a>
+                <a href="goods_list.html"><i class="fa fa-arrow-circle-left"></i>继续购物</a>
+            </li>
+            <li>
+                已选择<i class="number_i"></i>件商品
+                <b>总价（不包含运费）</b>
+                <span class="add_price"></span>
+                <a class="account">去结算<i class="fa fa-angle-double-right"></i></a>
+            </li>
+        </ul>
+    </div>
+</article>
+
+<!--空-->
+<div class="kong">
+    <img src="../img/grey_shoppingcar.png">
+    <p>您的购物车还是空的，马上<a href="login.html">登录</a>可展示您之前加入购物车的商品<br>
+        去<a href="index.html">首页</a>挑选您喜欢的商品</p>
+</div>
+
+<!--遮罩div-->
+<div class="mask"></div>
+
+<!--确定清空购物车按钮-->
+<div class="clear_shopcar">
+    <div class="clear_nav">
+        <span>提示</span>
+        <a href="javascript:;" class="close">×</a>
+    </div>
+    <p><img src="../img/warring.png">您确定要清空购物车?</p>
+    <a href="javascript:;" class="true_clear">确定</a>
+</div>
+
+
+</body>
+</html>
